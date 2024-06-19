@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:rgba(188, 200, 241, 0.642);
+}
+.container{
+    display: flex;
+    margin-top: 20px;
+    padding: 20px;
+    height: 45vh;
+    background-color: rgb(248, 247, 250);
+    border-radius: 10px;
+}
+.right{
+    width: 48%;
+    background-color: rgb(53, 106, 133);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#right{
+    display: grid;
+    grid-template-columns: 1fr 0.15fr; /* Two equal columns */
+    gap: 10px; /* Space between columns */
+    align-items: center; 
+    text-align: left;
+}
+.left{
+    width: 50% ;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+h2{
+    font-size: 35px;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    color: rgb(60, 88, 115);
+}
+h6{
+    font-size: 14px;
+    color: rgb(101, 144, 196);
+    font-family: monospace;
+    text-transform: capitalize;
+    margin: 10px 0px;
+    margin-top: 20px;
+}
+h5{
+    font-size: 15px;
+    color: rgb(243, 241, 248);
+    font-family: monospace;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    margin: 10px 0px;
+}
+input{
+    border: 0.5px solid  rgb(204, 236, 251);;
+    border-radius: 5px;
+    /* margin: 10px 0px; */
+    width: 100%;
+    height: 1.5rem;
+    font-size: 15px;
+    text-align: right;
+    background-color: rgb(236, 244, 252);
+    text-transform: capitalize;
+    font-family: monospace;
+    padding-right: 5px;
+    letter-spacing: 0;
+}
+#reset, #calc{
+    width: 100%;
+    font-size: 17px;
+    border: none;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: rgb(53, 106, 133);
+    background-color: rgba(166, 195, 236, 0.944);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: monospace;
+    cursor: pointer;
+}
+.text{
+    font-size: 12px;
+    font-style: italic;
+    text-transform: lowercase;
+    letter-spacing: 0;
+    color:rgb(157, 195, 214) ;
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+}
+#tipPsn, #tolPsn{
+    font-size: 19px;
+    text-transform: lowercase;
+    font-family: monospace;
+    letter-spacing: 2px;
+    color:rgb(157, 195, 214) ;
+    margin: 0;
+    padding: 0;
+}
+.prcnt{
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr; /* Two equal columns */
+    gap: 10px; /* Space between columns */
+    align-items: center; 
+    text-align: left;
+}
+button{
+    background-color:  rgb(53, 106, 133);
+    color: rgb(242, 244, 251);
+    font-family: monospace;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+button:hover{
+    background-color:rgb(96, 151, 175) ;
+}
+button #custom{
+    margin: -4px;
+    outline: none;
+}

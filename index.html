@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Spliter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Tip Spliter</h2>
+
+<div class="container">
+<div class="left">
+    <!-- <i class="	fas fa-dollar-sign"></i> -->
+    <h6>$ bill</h6>
+    <input type="number" name="bill" id="bill" placeholder="0.0">
+
+    <h6>Select tip %</h6>
+    <div class="prcnt">
+        <button value="5"> 5  %</button>
+        <button value="10"> 10  %</button>
+        <button value="15"> 15  %</button>
+        <button value="20"> 20  %</button>
+        <button value="25"> 25  %</button>
+        <button><input type="number" name="custom" id="custom" placeholder="custom"></button>
+    </div>
+
+    <h6><i class='fas fa-user'></i> Number of persons</h6>
+    <input type="number" id="person" placeholder=" 1">
+</div>
+
+<div class="right">
+<div id="right">
+    <h5>Tip Amount <br>
+        <span class="text"> per person</span></h5>
+        <span id="tipPsn">$0.0</span>
+    
+        <h5>Total Amount <br>
+            <span class="text"> per person</span></h5>
+            <span id="tolPsn">$0.0</span>
+</div>
+
+<div>
+    <button type="submit" id="calc"> calculate</button>
+    <button type="reset" id="reset"> Reset</button>
+</div>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
